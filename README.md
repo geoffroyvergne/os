@@ -6,6 +6,12 @@ https://wiki.osdev.org/Main_Page
 
 brew install qemu nasm
 
+export CC=/usr/local/Cellar/gcc/10.2.0_3/bin/gcc-10
+export LD=/usr/local/Cellar/gcc/10.2.0_3/bin/gcc-10
+export PREFIX="/usr/local/i386elfgcc"
+export TARGET=i386-elf
+export PATH="$PREFIX/bin:$PATH"
+
 ## simple boot sector
 
 ### compile
